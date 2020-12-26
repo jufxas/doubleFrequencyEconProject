@@ -1,10 +1,15 @@
+* {
+    margin: 0px;
+    font-family: 'Varela Round',
+    sans-serif;
+}
 navbar {
-    display: block;
-    font-family: 'Varela Round', sans-serif;
     background: rgb(0, 133, 255);
     color: white;
     display: flex;
     font-size: 50px;
+    position: fixed;
+    width: 100%;
 }
 #homePageButton {
     display: flex;
@@ -21,4 +26,29 @@ navbar {
 .optTextLink + .optTextLink {
     margin-left: 10px;
     /* doing all this gets the padding b/w the text */
+}
+
+#firstHeadphoneDisplay {
+    text-align: center;
+    font-size: 50px;
+}
+
+#secondHeadphoneDisplay {
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+contact-us-text {
+    display: block;
+    margin-left: 10px;
+}
+
+#contactForm {
+    margin-left: 10px;
+    font-family: 'Varela Round',
+    sans-serif;
+}
+
+.warningFormIncomplete {
+    color: red;
 }
