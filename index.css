@@ -50,5 +50,53 @@ contact-us-text {
 }
 
 .warningFormIncomplete {
+    margin-left: 10px;
     color: red;
+}
+
+
+.circle {
+    background-color: rgb(255, 0, 238);
+    border: 1px solid rgba(0, 0, 0, 0);
+
+    height: 50px;
+    width: 50px;
+
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;   
+
+    display: inline-block;
+}
+
+.jqueryHeadphone {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 50px;
+}
+
+.productInfo  {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 300px;
+}
+
+/* font-family: 'Alegreya Sans SC', sans-serif; */
+
+#comapnyLogo {
+    position: fixed;
+}
+
+#establishEthos {
+    margin-left: 10px;
+    display: flex;
+    margin-right: 250px;
+}
+
+.nameTitles {
+    margin-left: 10px;
+    text-decoration: underline;
+    font-family: 'Oswald',
+    sans-serif;
+    font-size: 25px;
 }

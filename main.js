@@ -1,5 +1,5 @@
 let preventRateLimitPls = false;
-$('input#contactButtonSubmit').click(function() {
+$('input#contactButtonSubmit').click(() => {
     let incompleteForm = false;
     let incompleteItems = [];
     let name = $('input[name="formName"]').val()
@@ -18,7 +18,7 @@ $('input#contactButtonSubmit').click(function() {
         },
 
         Fsubject: {
-            property: "Subject",
+            property: "subject",
             value: subject.length === 0 ? undefined : subject
         },
 
@@ -65,7 +65,7 @@ $('input#contactButtonSubmit').click(function() {
                     Body: ${formInfo.Fbody.value}`
                 })
                 .then(function (message) {
-                    console.log(message);
+                    // console.log(message);
                     $("a.warningFormIncomplete")
                         .css("color", "green")
                         .html("Your form has been sent successfully.");
