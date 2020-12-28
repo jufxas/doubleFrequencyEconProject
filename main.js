@@ -1,4 +1,3 @@
-let preventRateLimitPls = false;
 $('input#contactButtonSubmit').click(() => {
     let incompleteForm = false;
     let incompleteItems = [];
@@ -52,35 +51,39 @@ $('input#contactButtonSubmit').click(() => {
             $("a.warningFormIncomplete").append(`${incompleteItems}.`);
         }
     }
-    if (!incompleteForm && !preventRateLimitPls) {
+    if (!incompleteForm && Cookies.get("formSubmitted") === undefined) {
         function sendEmail() {
             Email.send({
-                    Host: "smtp.gmail.com",
-                    Username: "doublefrequencybusiness@gmail.com",
-                    Password: "mynameisbob",
-                    To: 'doublefrequencybusiness@gmail.com',
-                    From: "doublefrequencybusiness@gmail.com",
-                    Subject: `User has submitted form request!`,
-                    Body: `Name: ${formInfo.Fname.value}\nSubject: ${formInfo.Fsubject.value}\nEmail: ${formInfo.Femail.value}\n
+                Host: "smtp.gmail.com",
+                Username: "doublefrequencybusiness@gmail.com",
+                Password: "mynameisbob",
+                To: 'doublefrequencybusiness@gmail.com',
+                From: "doublefrequencybusiness@gmail.com",
+                Subject: `User has submitted form request!`,
+                Body: `Name: ${formInfo.Fname.value}\nSubject: ${formInfo.Fsubject.value}\nEmail: ${formInfo.Femail.value}\n
                     Body: ${formInfo.Fbody.value}`
-                })
+            })
                 .then(function (message) {
                     // console.log(message);
                     $("a.warningFormIncomplete")
                         .css("color", "green")
                         .html("Your form has been sent successfully.");
 
-                    $('input[name="formName"]').val("")
-                    $('input[name="formEmail"]').val("")
-                    $('textarea#contactBody').val("")
+                    $('input[name="formName"]').val("");
+                    $('input[name="formEmail"]').val("");
+                    $('textarea#contactBody').val("");
                 });
         }
         sendEmail();
-        preventRateLimitPls = true;
+
+        let expirationDate = new Date(new Date().getTime() + 3600000);
+        // date.gettime() returns in num of miliseconds so 15*1000 is 15s
+        // 3600000 ms is 1 hour
+        Cookies.set("formSubmitted",true, {expires: expirationDate});
     }
-    else if (preventRateLimitPls) {
+    else if (Cookies.get("formSubmitted") === "true") {
         $("a.warningFormIncomplete")
             .css("color", "black")
-            .html("Please do not spam form submissions.");
-    }
+            .html("Please wait to submit another form.");
+    };
 }); 
