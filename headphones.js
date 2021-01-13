@@ -1,4 +1,4 @@
-function displayHeadphone (imageDirNoColAdded, title, price, description, ...colors) {
+function displayHeadphone(imageDirNoColAdded, title, price, description, ...colors) {
     $("body").append(`
         <div id="headphone-${title.split(" ").join("")}" style="display: flex;">
             <div class="jqueryHeadphone">
@@ -41,16 +41,12 @@ function displayHeadphone (imageDirNoColAdded, title, price, description, ...col
     }
 }
 
-displayHeadphone("./assets/example-headphone-col-", "Headphone Name", "$69.99", "This is a sample description but I hope these non-existant headphones have good audio fidelity. This is a sample description but I hope these non-existant headphones have good audio fidelity.", "white", "pink", "black","blue");
-
-displayHeadphone("./assets/example-headphone-col-", "Headphone Name2", "$69.99", "This is a sample description but I hope these non-existant headphones have good audio fidelity. This is a sample description but I hope these non-existant headphones have good audio fidelity.", "pink", "black", "white");
-
-
-
-// SIMILAR DIR NAMES ARE NECESSARY 
+const assetHook = "./assets/frequency-modelX-"
+displayHeadphone(assetHook, "Frequency Model X Wireless", "$59.99", "Headphones designed for a luxury experience. Seamless bluetooth pairing, great for any task, and amazing audio quality.", "red", "black", "blue", "purple");
+displayHeadphone(assetHook, "Frequency Model W Wired", "$35.00", "A solid pair of headphones that are reliable and performs efficiently. ", "cyan", "white", "lime");
 
 
-$("button").click(function () { 
+$("button").click(function () {
     let buttonClicked = $(this).attr("name")
     buttonClicked = buttonClicked.split("-");
     for (let i in buttonClicked) {
@@ -58,5 +54,5 @@ $("button").click(function () {
             buttonClicked[i] = "white"
         }
     }
-    $(`img#img-${buttonClicked[2]}`).attr("src",`./assets/example-headphone-col-${buttonClicked[1]}.png`)
+    $(`img#img-${buttonClicked[2]}`).attr("src", `${assetHook}${buttonClicked[1]}.png`)
 })

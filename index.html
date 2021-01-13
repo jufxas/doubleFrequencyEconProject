@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- NOTE: website with domain is up only via freenom for 1 year (this "purchase" was done on dec 25, 2020) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
     <link rel="stylesheet" href="./index.css">
 
     <!-- valera round -->
@@ -13,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="icon" href="./assets/haedphone-logo-blue.png">
 </head>
+
 <body>
     <navbar>
         <a id="homePageButton" href="index.html">
@@ -40,27 +43,27 @@
     <br><br><br><br>
 
     <div id="firstHeadphoneDisplay">
-        [Tagline and/or Product name here]<br>
-        <img src="./assets/sample-image.png" width="300" height="300">
+        High-quality headphones have arrived.<br>
+        <img src="./assets/frequency-modelX-black.png" width="300" height="300">
         <br><br>
     </div>
     <div id="secondHeadphoneDisplay">
-        [Other product info here]
+        <a style="display: block; text-align: center;">Amazing headphones for your satisfaction.</a>
         <br><br>
         <div style="text-align: center;">
-            <img src="./assets/sample-image.png" width="300" height="300">
-            <img src="./assets/sample-image.png" width="300" height="300" style="padding-left: 25px;">
-            <img src="./assets/sample-image.png" width="300" height="300" style="padding-left: 25px;">
+            <img src="./assets/frequency-modelX-red.png" width="300" height="300">
+            <img src=./assets/frequency-modelX-blue.png width="300" height="300" style="padding-left: 25px;">
+            <img src=./assets/frequency-modelX-purple.png width="300" height="300" style="padding-left: 25px;">
         </div>
     </div>
-    <a style="font-size: 75px;">I don't know what to add/remove, let me know what else to do ASAP!
     </a>
 
     <br>
-    <img src="./assets/comapnylogo.png" width="400" height="100" id="companyLogo">
     <div id="cookies">
-        This website uses cookies. By using this website, you agree to our use of cookies.
+        <em>This website uses cookies. By using this website, you agree to our use of cookies.</em>
     </div>
+    <img src="./assets/comapnylogo.png" width="400" height="100" id="companyLogo" style="margin-bottom: 10;">
     <script src="./main.js"></script>
 </body>
+
 </html>

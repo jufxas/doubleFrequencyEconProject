@@ -41,9 +41,11 @@ function displayEarbuds(imageDirNoColAdded, title, price, description, ...colors
     }
 }
 
-displayEarbuds("./assets/example-earbuds-col-", "Earbuds Name", "$69.99", "This is a sample description but I hope these non-existant earbuds have good audio fidelity. This is a sample description but I hope these non-existant earbuds have good audio fidelity.", "black","orange");
+const assetHook = "./assets/frequency-earbud-";
+displayEarbuds(assetHook, "Wireless Frequency Buds Model Z", "$110.00", "Fulfilling wireless earbuds that provide you with the quality, ease of use, and comfortability you deserve.", "white", "pink", "blue");
 
-displayEarbuds("./assets/example-earbuds-col-", "Earbuds Name2", "$69.99", "This is a sample description but I hope these non-existant earbuds have good audio fidelity. This is a sample description but I hope these non-existant headphones have good audio fidelity.","green","red");
+displayEarbuds(assetHook, "Wired Frequency Buds Model O", "$35.00", "Audio quality like no other pair of earbuds. ", "grey", "lime", "red");
+
 
 
 
@@ -58,5 +60,5 @@ $("button").click(function () {
             buttonClicked[i] = "white"
         }
     }
-    $(`img#img-${buttonClicked[2]}`).attr("src", `./assets/example-earbuds-col-${buttonClicked[1]}.png`)
+    $(`img#img-${buttonClicked[2]}`).attr("src", `.${assetHook}${buttonClicked[1]}.png`)
 })

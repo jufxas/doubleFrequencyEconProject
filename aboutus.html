@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 </head>
 
 <body>
@@ -31,7 +34,7 @@
                 <a href="./aboutus.html" class="optTextLink">
                     <optionText style="color: blue;">About Us</optionText>
                 </a>
-                
+
                 <a href="./contactus.html" class="optTextLink">
                     <optionText>Contact Us</optionText>
                 </a>
@@ -40,14 +43,74 @@
     </navbar>
 
     <br><br><br><br>
-    <a style="margin-left: 10px">[Insert mission statement here, all the business handling stuff goes here]</a>
+    <a style="margin-left: 10px; display: block; margin-right: 10px;">
+        At Double Frequency, we strive to create the best headphones available for the sake of leaving customers
+        satisfied and content. The customer is our number one priority for us so when you purchase Double Frequency
+        headphones or earbuds, you know it’ll be worth it.
+        <br><br>
+        We treat our workers here with care as all our products are manufactured in the U.S. and will not be overworked.
+    </a>
     <br><br>
 
     <a class="nameTitles">Kevin Diggs</a>
     <div id="establishEthos">
-        <span>Kevin Diggs is a 23-year-old graduate of Princeton University. He earned a bachelor's degree in electrical engineering within his four years of attending the school and had taken AP Calculus, AP Computer Science, and AP Chemistry in his high school, Frank J. Cicarell Elizabeth High School, and in college. Kevin was a salutatorian in his AP classes in college and had dreamed of starting his own company to where he could put his education to use. Throughout his 4 years of college, along with studying for the classes he was taking, he would also research, blueprint, and discover what was needed to start the headphone manufacturing company of his dreams. When Kevin had graduated college, he began his job hunt and after one month, was able to maintain a job as an electronics engineer for Goodlite Product Inc., making $21 an hour. While Kevin was working at his job, whenever he had spare time, he would build prototypes of potential wired and wireless headphones and earbuds. After a year of working at his job, Kevin quit so that he could devote the majority of his time working on constructing a pair of headphones that he deemed perfect. Kevin spent 5 months straight on this task and in total, Kevin had made over 120 blueprints and 50 prototypes/models of headphones. Five months prior to the official start of [INSERT COMAPNY NAME], Kevin joined a team of [INSERT JOBS UNIQUE, ANGEL, JAZYLN DO LIKE MAYBE UNQIUE HAD A DEGREE IN MECHANICAL ENGINEERING], alongside a loan of $50,000 from his father so that he could start [INSERT COMAPNY NAME] and produce wired/wireless earbuds and headphones. Four months later, the team was ready to start the manufacture of the product.<br><br>NOT FINAL BIOGRAPHY PART, NEEDS FIXING  </span>
-        <img src="./assets/random-guy.png" width="250" height="250">
+        <span>Kevin Diggs is a 23-year-old graduate of Princeton University. He earned a bachelor's degree in electrical
+            engineering within his four years of attending the school and had taken AP Calculus, AP Computer Science,
+            and AP Chemistry in his high school, Frank J. Cicarell Elizabeth High School, and in college. Kevin was a
+            salutatorian in his AP classes in college and had dreamed of starting his own company to where he could put
+            his education to use. Throughout his 4 years of college, along with studying for the classes he was taking,
+            he would also research, blueprint, and discover what was needed to start the headphone manufacturing company
+            of his dreams. When Kevin had graduated college, he began his job hunt and after one month, was able to
+            maintain a job as electronics engineer for Goodlite Product Inc., making $21 an hour. While Kevin was
+            working at his job, whenever he had spare time, he would build prototypes of potential wired and wireless
+            headphones and earbuds. After a year of working at his job, Kevin quit so that he could devote the majority
+            of his time working on constructing a pair of headphones that he deemed perfect. Kevin spent 5 months
+            straight on this task and in total, Kevin had made over 120 blueprints and 50 prototypes/models of
+            headphones. Five months prior to the official start of Double Frequency, Kevin joined a team of people with
+            similar mindsets so that he could start the company and produce wired/wireless earbuds and headphones. Four
+            months later, the team was ready to start the manufacture of the product.
+        </span>
     </div>
+
+    <a class="nameTitles">Angel Sosa</a>
+    <div id="establishEthos">
+        <span>Angel Sosa was not able to enroll into college due to the poverty his family and he were facing. He took
+            up 3 jobs in order to provide and maintain his family needs, which made him motivated to pursue a higher
+            education in engineering in hopes of starting a company and getting rich. After 6 years of community college
+            classes pertaining to mechanical engineering, Angel was approached by his high school friend Kevin Diggs
+            while out eating. After talking about what they did after high school, Kevin offered Angel an opportunity to
+            help start-up a headphone company named Double Frequency with him. Angel quickly accepted with hopes of
+            achieving his
+            dreams of wealth and supporting his family, and it paid off. He joined the team as the Quality Control
+            manager. The team of Jazlyn, Unique, Kevin, and Angel, quickly drew up business propositions and possible
+            prototypes of their future product. After months of deliberation, their product was ready to hit the market
+            and be released to the world.
+        </span>
+    </div>
+
+    <a class="nameTitles">Unique Acevedo </a>
+    <div id="establishEthos">
+        <span>Unique Acevedo tried his hardest to live up to his name his entire life: Unique. After joining many social
+            clubs throughout his high school years, taking many AP classes, and participating in hundreds of community
+            organized events, Unique found that helping and informing others was his gift. Unique graduated from the MIT
+            Sloan School of Management with a bachelor's degree in marketing. After college, Unique approached a variety
+            of jobs: a business teacher, a social media manager, a reporter, etc. All in all, none of them seem to fit
+            his wants and needs. However, everything changed the day that Kevin Diggs, an old student, an old friend
+            from Unique’s AP Calculus class back in high school, approached him at one of the community’s social events.
+            He explained to Unique that he was starting his own business and wanted his social skills and marketing
+            experience on his team. A lightbulb flashed above Unique’s head; he knew this was the opportunity he’s been
+            dreaming of for so long. Business marketing was perfect for Unique, considering he had a degree in marketing
+            after all. He would be their Marketing Manager. After their entire team was assembled, and 4 months of hard
+            work and planning had passed, their business had been ready and would be spread across the world. Their
+            company, Double Frequency, would not stop for anyone.
+        </span>
+    </div>
+
+    <coupon>
+        Use code 'STARTUP' when you buy 3 or more of our products to receive a 15% discount!
+    </coupon>
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
