@@ -1,72 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- TO DO: 
+	<!-- TO DO: 
 -in subject, have more descriptive issue
 -umm just creating the website as a whole, theres quite a lot missing
 -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Headphones</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="icon" href="./assets/haedphone-logo-blue.png">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
-    <!-- js cookie -->
-</head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Headphones</title>
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" href="./assets/haedphone-logo-blue.png" />
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+		<!-- js cookie -->
+	</head>
 
-<body>
-    <navbar>
-        <a id="homePageButton" href="index.html">
-            <img src="./assets/headphone-logo-white.png" class="headphone">
-        </a>
-        <div id="navbarOptions">
-            <span id="navbarOptionsText">
-                <a href="./headphones.html" class="optTextLink">
-                    <optionText>Headphones</optionText>
-                </a>
-                <a href="./earbuds.html" class="optTextLink">
-                    <optionText>Earbuds</optionText>
-                </a>
-                <a href="./aboutus.html" class="optTextLink">
-                    <optionText>About Us</optionText>
-                </a>
+	<body>
+		<navbar>
+			<a id="homePageButton" href="index.html">
+				<img src="./assets/headphone-logo-white.png" class="headphone" />
+			</a>
+			<div id="navbarOptions">
+				<span id="navbarOptionsText">
+					<a href="./headphones.html" class="optTextLink">
+						<optionText>Headphones</optionText>
+					</a>
+					<a href="./earbuds.html" class="optTextLink">
+						<optionText>Earbuds</optionText>
+					</a>
+					<a href="./aboutus.html" class="optTextLink">
+						<optionText>About Us</optionText>
+					</a>
 
-                <a href="./contactus.html" class="optTextLink">
-                    <optionText style="color: blue;">Contact Us</optionText>
-                </a>
-            </span>
-        </div>
-    </navbar>
+					<a href="./contactus.html" class="optTextLink">
+						<optionText style="color: blue">Contact Us</optionText>
+					</a>
+				</span>
+			</div>
+		</navbar>
 
-    <br><br><br><br>
-    <contact-us-text>
-        If you have any concerns or questions, feel free to contact us direclty at doublefrequencybusiness@gmail.com or
-        fill out a form down below.
-    </contact-us-text><br>
+		<br /><br /><br /><br />
+		<contact-us-text>
+			If you have any concerns or questions, feel free to contact us directly at
+			doublefrequencybusiness@gmail.com or fill out a form down below. </contact-us-text
+		><br />
 
-    <a class="warningFormIncomplete"></a><br><br>
-    <div id="contactForm">
-        Name: <br><input type="text" name="formName"><br>
-        <br>Email:<br> <input type="email" name="formEmail">
-        <br><br>Subject:<br name="formSubject">
-        <select id="selectSubject">
-            <option>Issue 1</option>
-            <option>Issue 2</option>
-            <option>Issue 3</option>
-            <option>Other (Please provide in message)</option>
-        </select>
-        <br><br>Body:<br>
-        <textarea id="contactBody" cols="35" rows="15"></textarea><br><br>
-        <input type="button" id="contactButtonSubmit" value="Submit Form">
-    </div>
-    <script src="./main.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <!-- email sender -->
-    <!-- NOTE: SCRIPT TAG HAS TO BE AT END FOR THINGS TO WORK -->
-</body>
-
+		<a class="warningFormIncomplete"></a><br /><br />
+		<div id="contactForm">
+			Name: <br /><input type="text" name="formName" /><br />
+			<br />Email:<br />
+			<input type="email" name="formEmail" /> <br /><br />Subject:<br
+				name="formSubject"
+			/>
+			<select id="selectSubject">
+				<option>Issue 1</option>
+				<option>Issue 2</option>
+				<option>Issue 3</option>
+				<option>Other (Please provide in message)</option>
+			</select>
+			<br /><br />Body:<br />
+			<textarea id="contactBody" cols="35" rows="15"></textarea><br /><br />
+			<input type="button" id="contactButtonSubmit" value="Submit Form" />
+		</div>
+		<script src="./main.js"></script>
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<!-- email sender -->
+		<!-- NOTE: SCRIPT TAG HAS TO BE AT END FOR THINGS TO WORK -->
+	</body>
 </html>
