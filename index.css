@@ -27,7 +27,7 @@ navbar {
 	color: white;
 }
 
-.optTextLink+.optTextLink {
+.optTextLink + .optTextLink {
 	margin-left: 10px;
 	/* doing all this gets the padding b/w the text */
 }
@@ -111,4 +111,5 @@ contact-us-text {
 coupon {
 	display: block;
 	padding-top: 20px;
+	margin-left: 10px;
 }
